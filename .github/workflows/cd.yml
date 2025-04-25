@@ -29,4 +29,4 @@ jobs:
         uses: "google-github-actions/setup-gcloud@v2"
 
       - name: "Use gcloud Build Image"
-        run: "gcloud builds submit --tag us-central1-docker.pkg.dev/fluid-facet-457903-m7/notely-ar-repo/notely:latest ."
+        run: "gcloud builds submit --tag us-central1-docker.pkg.dev/fluid-facet-457903-m7/notely-ar-repo/notely:latest --region us-central1 --allow-unauthenticated --project fluid-facet-457903-m7 --max-instances=4"
